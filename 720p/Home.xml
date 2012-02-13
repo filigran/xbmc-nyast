@@ -1,0 +1,30 @@
+<window id="0">
+	<defaultcontrol always="true">300</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+        <include>GlobalBackground</include>
+        <control type="label">
+			<include>WindowID</include>
+			<label>Home.xml</label>
+		</control>
+        
+        <include>Global_Menu</include>
+		<control type="rss">
+			<description>RSS Feed</description>
+			<posx>0</posx>
+			<posy>690</posy>
+			<width>1280</width>
+			<height>14</height>
+			<font>Small</font>
+			<urlset>1</urlset>
+			<titlecolor>Red</titlecolor>
+			<headlinecolor>White</headlinecolor>
+			<textcolor>White</textcolor>
+			<animation effect="slide" end="240,-44" condition="Window.IsActive(musicoverlay) | Window.IsActive(videooverlay)">Conditional</animation>
+		</control>
+    	<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

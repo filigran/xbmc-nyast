@@ -1,0 +1,81 @@
+<fonts>
+	<fontset id="default" unicode="true">
+    <!-- nyast -->
+        <font>
+            <name>Myriad_Bold_Caps_22</name>
+            <filename>Myriad_Bold_Caps.ttf</filename>
+            <size>22</size>
+        </font>
+		<font>
+            <name>Myriad_Bold_20</name>
+            <filename>Myriad_Bold.ttf</filename>
+            <size>20</size>
+        </font>
+        <font>
+            <name>Myriad_Bold_22</name>
+            <filename>Myriad_Bold.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>Myriad_Bold_30</name>
+            <filename>Myriad_Bold.ttf</filename>
+            <size>30</size>
+        </font>
+        <font>
+            <name>Myriad_Regular_Caps_18</name>
+            <filename>Myriad_Regular_Caps.ttf</filename>
+            <size>18</size>
+        </font>
+        <font>
+            <name>Myriad_Regular_Caps_24</name>
+            <filename>Myriad_Regular_Caps.ttf</filename>
+            <size>24</size>
+        </font>
+        <font>
+            <name>Myriad_Regular_Caps_30</name>
+            <filename>Myriad_Regular_Caps.ttf</filename>
+            <size>30</size>
+        </font>
+        <font>
+            <name>Myriad_Regular_20</name>
+            <filename>Myriad_Regular.ttf</filename>
+            <size>20</size>
+        </font>
+        <font>
+            <name>Myriad_Regular_22</name>
+            <filename>Myriad_Regular.ttf</filename>
+            <size>22</size>
+        </font>
+		<font>
+			<name>Home</name>
+			<filename>Arial.ttf</filename>
+			<size>64</size>
+		</font>
+		
+		<font>
+			<name>Large</name>
+			<filename>Arial.ttf</filename>
+			<size>32</size>
+		</font>
+		
+		<font>
+			<name>Medium</name>
+			<filename>Arial.ttf</filename>
+			<size>26</size>
+		</font>
+		
+		<font>
+			<name>Small</name>
+			<filename>Arial.ttf</filename>
+			<size>20</size>
+		</font>
+
+		<!-- Required for system -->
+		<font>
+			<name>font13</name>
+			<filename>Arial.ttf</filename>
+			<size>20</size>
+		</font>
+
+	</fontset>
+</fonts>

@@ -1,0 +1,56 @@
+﻿ <window id="51" type="dialog">
+  <defaultcontrol>300</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <visible>true</visible>
+  <coordinates>
+    <system>1</system>
+    <posx>0</posx>
+    <posy>0</posy>
+  </coordinates>
+  <controls>
+      <control type="grouplist" id="300">
+            <posx>80</posx>
+            <posy>10</posy>
+            <width>1120</width>
+            <height>50</height>
+            <onleft>300</onleft>
+            <onright>300</onright>
+            <onup>50</onup>
+            <ondown>50</ondown>
+            <orientation>horizontal</orientation>
+            <control type="button" id="301">
+                <description>Play disc</description>
+                <width>220</width>
+                <align>center</align>
+                <label>Play disc</label>
+            </control>
+            <control type="button" id="302">
+                <description>Movies</description>
+                <width>220</width>
+                <align>center</align>
+                <label>Movies</label>
+                <onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+            </control>
+            <control type="button" id="303">
+                <description>TV Shows</description>
+                <width>220</width>
+                <align>center</align>
+                <label>TV Shows</label>
+                <onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+            </control>
+            <control type="button" id="304">
+                <description>Games</description>
+                <width>220</width>
+                <align>center</align>
+                <label>Games</label>
+            </control>
+            <control type="button" id="305">
+                <description>Weather</description>
+                <width>220</width>
+                <align>center</align>
+                <label>Weather</label>
+                <onclick>ActivateWindow(MyWeather)</onclick>
+            </control>
+        </control>
+  </controls>
+</window>

@@ -1,0 +1,88 @@
+<includes>
+
+	<include name="View_50_List">
+	
+		<description>List View (id=50)</description>
+
+		<control type="list" id="50">
+			<posx>220</posx>
+			<posy>38</posy>
+			<width>640</width>
+			<height>644</height>
+			<onleft>9000</onleft>
+			<onright>60</onright>
+			<onup>50</onup>
+			<ondown>50</ondown>
+			<pagecontrol>60</pagecontrol>
+			<viewtype label="535">list</viewtype>
+			<scrolltime>200</scrolltime>
+			<animation type="Conditional" condition="ControlGroup(9000).HasFocus()">
+				<effect type="fade" start="100" end="50" time="200" />
+				<effect type="zoom" center="860,360" start="100" end="90" time="200" />
+			</animation>
+
+			<itemlayout width="640" height="46">
+
+				<control type="image">
+					<width>640</width>
+					<height>44</height>
+					<texture border="2">other_textures/ButtonNF.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<width>600</width>
+					<font>Medium</font>
+					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+				</control>
+
+			</itemlayout>
+
+			<focusedlayout width="640" height="46">
+
+				<control type="image">
+					<width>640</width>
+					<height>44</height>
+					<texture border="5">other_textures/ButtonFo.png</texture>
+					<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<width>600</width>
+					<font>Medium</font>
+					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, - ]</label>
+				</control>
+
+			</focusedlayout>
+
+		</control>
+
+		<control type="image">
+			<posx>920</posx>
+			<posy>140</posy>
+			<width>320</width>
+			<height>440</height>
+			<fadetime>100</fadetime>
+			<aspectratio align="left" aligny="center">keep</aspectratio>
+			<texture fallback="DefaultAddonNone.png">$INFO[ListItem.Icon]</texture>
+			<bordertexture border="5">other_textures/ButtonFo.png</bordertexture>
+			<bordersize>8</bordersize>
+			<visible>!IsEmpty(ListItem.Icon)</visible>
+            <visible>Control.HasFocus(50)</visible>
+		</control>
+
+		<control type="scrollbar" id="60">
+			<posx>878</posx>
+			<posy>34</posy>
+			<height>652</height>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<visible allowhiddenfocus="true">Control.HasFocus(60) | Container.Scrolling</visible>
+            <visible>Control.IsVisible(50)</visible>
+			<animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60) | Container(50).Scrolling">Conditional</animation>
+		</control>
+
+	</include>
+
+</includes>
