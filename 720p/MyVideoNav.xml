@@ -11,10 +11,6 @@
 		</control>
 
 		<include>GlobalBackground</include>
-        <!--<control type="label">
-			<include>WindowID</include>
-			<label>MyVideoNav.xml</label>
-		</control>-->
         <include>Global_Menu</include>
 		<include>View_50_List</include>
         <include>View_51_New_list</include>
@@ -24,6 +20,15 @@
             <width>143</width>
             <height>53</height>
             <texture>$INFO[ListItem.path]logo.png</texture>
+            <visible>Container.Content(TVShows) | Container.Content(Seasons)</visible>
+        </control>
+        <control type="image">
+            <posx>50</posx>
+            <posy>20</posy>
+            <width>143</width>
+            <height>53</height>
+            <texture>$INFO[ListItem.path]/../logo.png</texture>
+            <visible>Container.Content(Episodes)</visible>
         </control>
         <control type="label">
             <posx>205</posx>
